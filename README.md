@@ -21,7 +21,3 @@ This project predicts house prices using machine learning based on features like
 - scaler.pkl → data scaler
 - columns.pkl → feature columns
 - Bengaluru_House_Data.csv → dataset
-
-## How to Run
-1. Install requirements
-2. Run python houseprice_predict.py
