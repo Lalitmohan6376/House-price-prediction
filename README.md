@@ -34,8 +34,9 @@ The model analyzes various features such as location, size (BHK), total square f
 ---
 
 ## 📂 Project Structure
+
 House-Price-Prediction/
-│
+
 ├── houseprice_predict.py
 
 ├── model.pkl
