@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>House Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<p class="intro-text">
+    This web application predicts house prices using machine learning by
+    analyzing location, area, BHK, bathroom and other important factors.
+</p>
+
+<h2>House Price Prediction</h2>
+
+<form action="/predict" method="post">
+
+    <!-- ROW 1 -->
+    <div class="row">
+        <div class="field">
+            <label>Area Type</label>
+            <input type="text" name="area_type"
+                   value="{{ request.form.area_type }}">
+        </div>
+
+        <div class="field">
+            <label>Availability</label>
+            <input type="text" name="availability"
+                   value="{{ request.form.availability }}">
+        </div>
+
+        <div class="field">
+            <label>Location</label>
+            <input type="text" name="location"
+                   value="{{ request.form.location }}">
+        </div>
+    </div>
+
+    <!-- ROW 2 -->
+    <div class="row">
+        <div class="field">
+            <label>Size (BHK)</label>
+            <input type="number" name="size"
+                   value="{{ request.form.size }}">
+        </div>
+
+        <div class="field">
+            <label>Society</label>
+           <input type="text" name="society"
+       value="{{ request.form.society }}">
+
+        </div>
+
+        <div class="field">
+            <label>Total Sqft</label>
+            <input type="number" name="total_sqft"
+                   value="{{ request.form.total_sqft }}">
+        </div>
+    </div>
+
+    <!-- ROW 3 -->
+    <div class="row">
+        <div class="field">
+            <label>Bath</label>
+            <input type="number" name="bath"
+                   value="{{ request.form.bath }}">
+        </div>
+
+        <div class="field">
+            <label>Balcony</label>
+            <input type="number" name="balcony"
+                   value="{{ request.form.balcony }}">
+        </div>
+    </div>
+
+    <!-- RESULT -->
+    <div class="result-row">
+        <input type="submit" value="Estimate Price 💰" class="btn">
+
+        <div class="result-box">
+            {% if prediction_text %}
+                <h3>{{ prediction_text }}</h3>
+            {% endif %}
+        </div>
+    </div>
+
+</form>
+
+</body>
+</html>
