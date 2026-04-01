@@ -37,8 +37,13 @@ The model analyzes various features such as location, size (BHK), total square f
 House-Price-Prediction/
 │
 ├── houseprice_predict.py
+
 ├── model.pkl
+
 ├── scaler.pkl
+
 ├── columns.pkl
+
 ├── Bengaluru_House_Data.csv
+
 ├── README.md
