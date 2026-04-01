@@ -1,23 +1,36 @@
-# House Price Prediction
+# 🏠 House Price Prediction
 
-## Overview
-This project predicts house prices using machine learning based on features like location, size, and other parameters.
+## 📌 Overview
+This project focuses on predicting house prices in Bengaluru using Machine Learning techniques.  
+The model analyzes various features such as location, size (BHK), total square footage, number of bathrooms, and balconies to estimate property prices.
 
-## Features
-- Data preprocessing
-- Model training
-- Price prediction
-- Simple web interface
+---
 
-## Tech Stack
-- Python
-- Pandas
-- Scikit-learn
-- Flask (if used)
+## 🚀 Features
+- ✅ Data Cleaning & Preprocessing  
+- ✅ Handling Missing Values  
+- ✅ Feature Engineering (BHK extraction, sqft conversion)  
+- ✅ One-Hot Encoding for categorical data  
+- ✅ Model Training using Random Forest  
+- ✅ Model Evaluation (R² Score, MAE, RMSE)  
+- ✅ Price Prediction System  
+- ✅ Ready for Web Integration (Flask)
 
-## Files
-- houseprice_predict.py → main code
-- model.pkl → trained model
-- scaler.pkl → data scaler
-- columns.pkl → feature columns
-- Bengaluru_House_Data.csv → dataset
+---
+
+## 🛠️ Tech Stack
+- **Python**
+- **Pandas & NumPy**
+- **Scikit-learn**
+- **Flask** (for deployment, optional)
+
+---
+
+## 📊 Machine Learning Model
+- Algorithm: **Random Forest Regressor**
+- Handles non-linear relationships effectively
+- Provides better accuracy compared to basic models
+
+---
+
+## 📂 Project Structure
